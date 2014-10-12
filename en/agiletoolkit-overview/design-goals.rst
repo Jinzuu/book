@@ -30,7 +30,7 @@ used objects is a :php:class:`Form`. Here is a simple form example::
     $form->addSubmit();
 
     if ($form->isSubmitted()) {
-        $form->js()->univ()->alert('Hello, ',$form['name']);
+        $form->js()->univ()->alert('Hello, '.$form['name'])->execute();
     }
 
 Compared to the vanilla PHP approach to forms, this method gives
